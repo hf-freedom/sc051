@@ -1,0 +1,23 @@
+server:
+  port: 8004
+
+spring:
+  application:
+    name: crossborder-ecommerce
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: Asia/Shanghai
+    serialization:
+      write-dates-as-timestamps: false
+
+crossborder:
+  annual-quota: 26000.00
+  default-tax-rate: 0.13
+  customs-success-rate: 0.95
+  customs-retry-max: 3
+
+logging:
+  level:
+    com.crossborder: DEBUG
+    org.springframework.web: INFO
